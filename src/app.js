@@ -6,6 +6,7 @@ const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const path = require('path');
 const islandRoutes = require('./routes/islandRoutes');
+const authRoutes = require('./routes/authRoutes');
 const errorHandler = require('./middleware/error');
 
 const app = express();
@@ -42,6 +43,7 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/islands', islandRoutes);
+app.use('/api/auth', authRoutes);
 
 // 404 Handler (for undefined routes)
 app.use((req, res, next) => {
