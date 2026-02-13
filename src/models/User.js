@@ -32,7 +32,10 @@ const UserSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now
-  }
+  },
+  otp: String,
+  otpExpire: Date,
+  otpLastSent: Date
 });
 
 // Encrypt password using bcrypt

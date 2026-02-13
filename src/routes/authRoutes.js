@@ -1,5 +1,13 @@
 const express = require('express');
-const { register, login, getMe } = require('../controllers/authController');
+const {
+  register,
+  login,
+  getMe,
+  forgotPassword,
+  verifyOTP,
+  resetPassword,
+  resendOTP
+} = require('../controllers/authController');
 const { protect } = require('../middleware/auth');
 
 const router = express.Router();
@@ -115,5 +123,150 @@ router.post('/login', login);
  *         description: Not authorized
  */
 router.get('/me', protect, getMe);
+
+/**
+ * @swagger
+ * /api/auth/forgotpassword:
+ *   post:
+ *     summary: Forgot password (send OTP)
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Email sent
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 data:
+ *                   type: string
+ *       404:
+ *         description: User not found
+ */
+router.post('/forgotpassword', forgotPassword);
+
+/**
+ * @swagger
+ * /api/auth/verifyotp:
+ *   post:
+ *     summary: Verify OTP
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - otp
+ *             properties:
+ *               email:
+ *                 type: string
+ *               otp:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: OTP Verified
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 data:
+ *                   type: string
+ *       400:
+ *         description: Invalid OTP
+ */
+router.post('/verifyotp', verifyOTP);
+
+/**
+ * @swagger
+ * /api/auth/resetpassword:
+ *   put:
+ *     summary: Reset password
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - otp
+ *               - password
+ *             properties:
+ *               email:
+ *                 type: string
+ *               otp:
+ *                 type: string
+ *               password:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: Password reset successful
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 token:
+ *                   type: string
+ *       400:
+ *         description: Invalid OTP or request
+ */
+router.put('/resetpassword', resetPassword);
+
+/**
+ * @swagger
+ * /api/auth/resendotp:
+ *   post:
+ *     summary: Resend OTP
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *             properties:
+ *               email:
+ *                 type: string
+ *     responses:
+ *       200:
+ *         description: OTP resent
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 success:
+ *                   type: boolean
+ *                 data:
+ *                   type: string
+ *       400:
+ *         description: Please wait 1 minute
+ */
+router.post('/resendotp', resendOTP);
 
 module.exports = router;
