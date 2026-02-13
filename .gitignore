@@ -29,3 +29,5 @@ resolve_dns.js
 coverage/
 dist/
 build/
+
+.env.backup
