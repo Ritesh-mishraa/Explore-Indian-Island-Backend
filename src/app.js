@@ -2,6 +2,8 @@ const express = require('express');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const rateLimit = require('express-rate-limit');
+const mongoSanitize = require('express-mongo-sanitize');
 const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
 const path = require('path');
@@ -20,18 +22,29 @@ const swaggerOptions = {
       version: '1.0.0',
       description: 'API documentation for the Island discovery platform',
     },
-    servers: [{ url: 'http://localhost:5000' }],
+    servers: [{ url: 'http://localhost:5001' }],
   },
-  apis: [path.join(__dirname, 'routes/*.js')], // Ensure correct path resolution
+  apis: [path.join(__dirname, 'routes/*.js')],
 };
 
 const swaggerDocs = swaggerJsDoc(swaggerOptions);
 
+// Rate Limiter — max 20 requests per 10 minutes for auth routes
+const authLimiter = rateLimit({
+  windowMs: 10 * 60 * 1000,
+  max: 20,
+  message: { success: false, error: 'Too many requests, please try again after 10 minutes' }
+});
+
 // Global Middlewares
-app.use(helmet());        // Security headers
-app.use(cors());          // Allow frontend access
-app.use(morgan('tiny'));  // Concise request logging
-app.use(express.json());  // Parse JSON bodies
+app.use(helmet());
+app.use(cors({
+  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  credentials: true
+}));
+app.use(morgan('tiny'));
+app.use(express.json());
+app.use(mongoSanitize()); // Prevent NoSQL injection
 
 // Documentation Route
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
@@ -43,7 +56,7 @@ app.get('/health', (req, res) => {
 
 // API Routes
 app.use('/api/islands', islandRoutes);
-app.use('/api/auth', authRoutes);
+app.use('/api/auth', authLimiter, authRoutes);
 
 // 404 Handler (for undefined routes)
 app.use((req, res, next) => {

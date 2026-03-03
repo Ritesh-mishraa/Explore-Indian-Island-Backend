@@ -10,6 +10,11 @@ const sendEmail = require('../utils/sendEmail');
 exports.register = asyncHandler(async (req, res, next) => {
   const { name, email, password, role } = req.body;
 
+  // Validate required fields
+  if (!name || !email || !password) {
+    return next(new ErrorResponse('Please provide name, email and password', 400));
+  }
+
   // Create user
   const user = await User.create({
     name,
@@ -18,7 +23,7 @@ exports.register = asyncHandler(async (req, res, next) => {
     role
   });
 
-  sendTokenResponse(user, 200, res);
+  sendTokenResponse(user, 201, res);
 });
 
 // @desc      Login user
@@ -192,7 +197,7 @@ exports.resetPassword = asyncHandler(async (req, res, next) => {
 // @access    Public
 exports.resendOTP = asyncHandler(async (req, res, next) => {
   const { email } = req.body;
-  
+
   const user = await User.findOne({ email });
 
   if (!user) {

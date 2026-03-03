@@ -6,32 +6,33 @@ const asyncHandler = require('../middleware/asyncHandler');
 // @route   GET /api/islands
 // @access  Public
 exports.getAllIslands = asyncHandler(async (req, res, next) => {
-  let query;
   // Copy req.query
   const reqQuery = { ...req.query };
 
-  // Fields to exclude from filtering (we'll use them for sorting/pagination later)
-  const removeFields = ['select', 'sort', 'page', 'limit'];
+  // Fields to exclude from filtering
+  const removeFields = ['select', 'sort', 'page', 'limit', 'name'];
   removeFields.forEach(param => delete reqQuery[param]);
 
-  // 1. Advanced Filtering (Supports gt, gte, in, etc.)
+  // Advanced Filtering (Supports gt, gte, in, etc.)
   let queryStr = JSON.stringify(reqQuery);
   queryStr = queryStr.replace(/\b(gt|gte|lt|lte|in)\b/g, match => `$${match}`);
 
-  // 2. Finding resource
-  query = Island.find(JSON.parse(queryStr));
+  let query = Island.find(JSON.parse(queryStr));
 
-  // 3. Search by Name (Regex) - Optional override if name params passed explicitly
+  // Name search: apply clean case-insensitive regex (separate from general filter)
   if (req.query.name) {
-     const nameRegex = { $regex: req.query.name, $options: 'i' };
-     // If we already have a query object from JSON.parse(queryStr), we need to merge or handle carefully.
-     // However, simpler approach for specific fields like name is often better.
-     // Let's rely on Mongoose optional query if 'name' is in reqQuery, it's already in JSON.parse(queryStr).
-     // But for regex specifically:
-     query = query.find({ name: nameRegex });
+    query = query.find({ name: { $regex: req.query.name, $options: 'i' } });
   }
 
-  // Pagination support (optional addition)
+  // Sorting
+  if (req.query.sort) {
+    const sortBy = req.query.sort.split(',').join(' ');
+    query = query.sort(sortBy);
+  } else {
+    query = query.sort('-createdAt');
+  }
+
+  // Pagination
   const page = parseInt(req.query.page, 10) || 1;
   const limit = parseInt(req.query.limit, 10) || 25;
   const startIndex = (page - 1) * limit;

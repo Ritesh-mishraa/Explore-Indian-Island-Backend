@@ -7,6 +7,7 @@ const {
   updateIsland,
   deleteIsland
 } = require('../controllers/islandController');
+const { protect } = require('../middleware/auth');
 
 /**
  * @swagger
@@ -121,7 +122,7 @@ const {
  */
 router.route('/')
   .get(getAllIslands)
-  .post(createIsland);
+  .post(protect, createIsland);
 
 /**
  * @swagger
@@ -188,7 +189,7 @@ router.route('/')
  */
 router.route('/:id')
   .get(getIsland)
-  .put(updateIsland)
-  .delete(deleteIsland);
+  .put(protect, updateIsland)
+  .delete(protect, deleteIsland);
 
 module.exports = router;
