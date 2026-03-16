@@ -44,7 +44,24 @@ app.use(cors({
 }));
 app.use(morgan('tiny'));
 app.use(express.json());
-app.use(mongoSanitize()); // Prevent NoSQL injection
+app.use((req, res, next) => {
+  ['body', 'params', 'headers', 'query'].forEach((key) => {
+    if (req[key]) {
+      const sanitized = mongoSanitize.sanitize(req[key]);
+      if (key === 'query') {
+        Object.defineProperty(req, 'query', {
+          value: sanitized,
+          writable: true,
+          enumerable: true,
+          configurable: true,
+        });
+      } else {
+        req[key] = sanitized;
+      }
+    }
+  });
+  next();
+});
 
 // Documentation Route
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
