@@ -3,6 +3,7 @@ const {
   register,
   login,
   getMe,
+  updateProfile,
   forgotPassword,
   verifyOTP,
   resetPassword,
@@ -123,6 +124,7 @@ router.post('/login', login);
  *         description: Not authorized
  */
 router.get('/me', protect, getMe);
+router.put('/updateprofile', protect, updateProfile);
 
 /**
  * @swagger

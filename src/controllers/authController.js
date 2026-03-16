@@ -66,6 +66,30 @@ exports.getMe = asyncHandler(async (req, res, next) => {
   });
 });
 
+// @desc      Update user profile
+// @route     PUT /api/auth/updateprofile
+// @access    Private
+exports.updateProfile = asyncHandler(async (req, res, next) => {
+  const allowedFields = ['name', 'phone', 'bio', 'location', 'dateOfBirth', 'gender', 'avatar'];
+  const fieldsToUpdate = {};
+
+  for (const field of allowedFields) {
+    if (req.body[field] !== undefined) {
+      fieldsToUpdate[field] = req.body[field];
+    }
+  }
+
+  const user = await User.findByIdAndUpdate(req.user.id, fieldsToUpdate, {
+    new: true,
+    runValidators: true
+  });
+
+  res.status(200).json({
+    success: true,
+    data: user
+  });
+});
+
 // @desc      Find User (Forgot Password) & Send OTP
 // @route     POST /api/auth/forgotpassword
 // @access    Public
