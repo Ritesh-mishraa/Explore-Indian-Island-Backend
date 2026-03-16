@@ -48,19 +48,19 @@ const islands = [
     vibeTags: ["Scuba", "Beach", "Romantic", "Adventure", "Snorkeling"],
     images: [
       {
-        url: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Havelock%2C_Andaman_%26_Nicobar_Islands.JPG/960px-Havelock%2C_Andaman_%26_Nicobar_Islands.JPG",
         caption: "Radhanagar Beach - Voted Asia's best beach"
       },
       {
-        url: "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Coral_reef_Elephant_Beach_%2CAndaman_10.jpg/960px-Coral_reef_Elephant_Beach_%2CAndaman_10.jpg",
         caption: "Crystal clear waters perfect for diving"
       },
       {
-        url: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Havelock_Island%2C_Sunset_at_the_beach%2C_Andamans.jpg/960px-Havelock_Island%2C_Sunset_at_the_beach%2C_Andamans.jpg",
         caption: "Stunning sunset views"
       },
       {
-        url: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Havelock_Island%2C_Canopy_of_tropical_moist_evergreen_forest%2C_Andaman_Islands.jpg/960px-Havelock_Island%2C_Canopy_of_tropical_moist_evergreen_forest%2C_Andaman_Islands.jpg",
         caption: "Lush tropical forests"
       }
     ],
@@ -114,15 +114,15 @@ const islands = [
     vibeTags: ["Quiet", "Snorkeling", "Beach", "Romantic", "Photography"],
     images: [
       {
-        url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Keshet_neal_island_india.jpg/960px-Keshet_neal_island_india.jpg",
         caption: "Natural Bridge - A stunning rock formation"
       },
       {
-        url: "https://images.unsplash.com/photo-1527489377706-5bf97e608852?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Kalapathar_beach_Havelock_Island%2C_Andaman%2C_India.JPG/960px-Kalapathar_beach_Havelock_Island%2C_Andaman%2C_India.JPG",
         caption: "Peaceful beaches with clear waters"
       },
       {
-        url: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Havelock_Island%2C_Tropical_beach_and_tree%2C_Andaman_Islands.jpg/960px-Havelock_Island%2C_Tropical_beach_and_tree%2C_Andaman_Islands.jpg",
         caption: "Sunset at Laxmanpur Beach"
       }
     ],
@@ -180,15 +180,15 @@ const islands = [
     vibeTags: ["Scuba", "Snorkeling", "Kayaking", "Beach", "Adventure"],
     images: [
       {
-        url: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Agatti_Airstrip.jpg/960px-Agatti_Airstrip.jpg",
         caption: "Turquoise lagoon surrounding Agatti"
       },
       {
-        url: "https://images.unsplash.com/photo-1542259009477-d625272157b7?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Coral_reef_Elephant_Beach_%2CAndaman_03.jpg/960px-Coral_reef_Elephant_Beach_%2CAndaman_03.jpg",
         caption: "Coral reefs visible from the shore"
       },
       {
-        url: "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Elephenta_beach%2C_Havelock_Island%2C_Andamn%2C_India.jpg/960px-Elephenta_beach%2C_Havelock_Island%2C_Andamn%2C_India.jpg",
         caption: "Traditional fishing boats"
       }
     ],
@@ -246,15 +246,15 @@ const islands = [
     vibeTags: ["Historical", "Beach", "Photography", "Cultural", "Architecture"],
     images: [
       {
-        url: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Monuments_of_Diu_%28City%29.jpg/960px-Monuments_of_Diu_%28City%29.jpg",
         caption: "Diu Fort overlooking the sea"
       },
       {
-        url: "https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Monuments_of_Diu_%28City%29.jpg/960px-Monuments_of_Diu_%28City%29.jpg",
         caption: "Portuguese colonial architecture"
       },
       {
-        url: "https://images.unsplash.com/photo-1580837119756-563d608dd119?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Havelock_Island%2C_Tropical_beach_and_tree%2C_Andaman_Islands.jpg/960px-Havelock_Island%2C_Tropical_beach_and_tree%2C_Andaman_Islands.jpg",
         caption: "Nagoa Beach - Popular tourist spot"
       }
     ],
@@ -312,15 +312,15 @@ const islands = [
     vibeTags: ["Cultural", "Historical", "Bird Watching", "Photography", "Quiet"],
     images: [
       {
-        url: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Doriya_River_of_Majuli.jpg/960px-Doriya_River_of_Majuli.jpg",
         caption: "Brahmaputra River surrounding Majuli"
       },
       {
-        url: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Kamalabari_Satra.jpg/500px-Kamalabari_Satra.jpg",
         caption: "Traditional Assamese monastery (satra)"
       },
       {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800",
+        url: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Sky_lamps_at_Sri_Sri_Auniati_Satra%2C_Majuli.jpg/960px-Sky_lamps_at_Sri_Sri_Auniati_Satra%2C_Majuli.jpg",
         caption: "Sunset over the river island"
       }
     ],

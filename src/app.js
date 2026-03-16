@@ -39,9 +39,14 @@ const authLimiter = rateLimit({
 // Global Middlewares
 app.use(helmet());
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:5173',
+  origin: [
+    process.env.FRONTEND_URL, 
+    'http://localhost:5173', 
+    'https://exploreindianislands.vercel.app'
+  ].filter(Boolean),
   credentials: true
 }));
+
 app.use(morgan('tiny'));
 app.use(express.json());
 app.use((req, res, next) => {
