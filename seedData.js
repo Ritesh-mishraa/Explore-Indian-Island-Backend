@@ -4,10 +4,7 @@ const islands = [
     nativeName: "Swaraj Dweep",
     location: {
       group: "Andaman",
-      coordinates: {
-        lat: 11.9944,
-        lng: 93.0061
-      },
+      coordinates: { lat: 11.9944, lng: 93.0061 },
       area: "113 sq km"
     },
     status: {
@@ -16,28 +13,20 @@ const islands = [
       permitRequired: "None"
     },
     description: {
-      summary: "Havelock Island, now officially known as Swaraj Dweep, is one of the most popular destinations in the Andaman Islands. Famous for its pristine beaches, crystal-clear waters, and vibrant coral reefs, it's a paradise for beach lovers and adventure seekers alike.",
-      history: "Originally inhabited by indigenous tribes, the island was later named after British General Henry Havelock during the colonial era. In 2018, it was renamed Swaraj Dweep as part of India's initiative to rename the islands.",
+      summary: "Havelock Island is one of the most famous islands in the Andaman archipelago known for beaches and coral reefs.",
+      history: "Named after British General Henry Havelock and renamed Swaraj Dweep in 2018.",
       floraAndFauna: [
-        "Vibrant coral reefs with diverse marine life",
-        "Sea turtles nesting on beaches",
-        "Tropical rainforest with dense vegetation",
-        "Colorful reef fish and manta rays",
-        "Mangrove forests along the coast"
+        "Coral reefs",
+        "Sea turtles",
+        "Mangrove forests",
+        "Tropical fish",
+        "Dense rainforest vegetation"
       ]
     },
     culinaryHighlights: [
       {
-        dishName: "Fresh Grilled Lobster",
-        description: "Locally caught lobster grilled to perfection with garlic butter and lime"
-      },
-      {
-        dishName: "Fish Curry",
-        description: "Traditional Andamanese fish curry with coconut milk and aromatic spices"
-      },
-      {
-        dishName: "Seafood Platter",
-        description: "A mix of prawns, squid, and fish served with local vegetables"
+        dishName: "Grilled Lobster",
+        description: "Fresh lobster grilled with butter and spices"
       }
     ],
     bestTimeToVisit: {
@@ -45,23 +34,11 @@ const islands = [
       endMonth: "May",
       peakSeason: "December to February"
     },
-    vibeTags: ["Scuba", "Beach", "Romantic", "Adventure", "Snorkeling"],
+    vibeTags: ["Beach","Scuba","Adventure","Snorkeling"],
     images: [
       {
         url: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?q=80&w=800",
-        caption: "Radhanagar Beach - Voted Asia's best beach"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?q=80&w=800",
-        caption: "Crystal clear waters perfect for diving"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=800",
-        caption: "Stunning sunset views"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=800",
-        caption: "Lush tropical forests"
+        caption: "Radhanagar Beach"
       }
     ],
     externalLinks: {
@@ -69,15 +46,13 @@ const islands = [
       govtPortal: "https://andaman.gov.in"
     }
   },
+
   {
     name: "Neil Island",
     nativeName: "Shaheed Dweep",
     location: {
       group: "Andaman",
-      coordinates: {
-        lat: 11.8312,
-        lng: 93.0476
-      },
+      coordinates: { lat: 11.8312, lng: 93.0476 },
       area: "18.9 sq km"
     },
     status: {
@@ -86,24 +61,20 @@ const islands = [
       permitRequired: "None"
     },
     description: {
-      summary: "Neil Island, officially renamed Shaheed Dweep, is a serene and less crowded alternative to Havelock. Known for its laid-back atmosphere, natural rock formations, and excellent snorkeling spots, it's perfect for those seeking tranquility.",
-      history: "Named after British Brigadier General James Neill, the island was renamed Shaheed Dweep (Martyr Island) in 2018 to honor India's freedom fighters.",
+      summary: "A peaceful island known for coral reefs and natural rock bridges.",
+      history: "Renamed Shaheed Dweep in 2018.",
       floraAndFauna: [
-        "Natural coral formations",
-        "Rich marine biodiversity",
-        "Coconut palm groves",
-        "Tropical birds and butterflies",
-        "Sea anemones and starfish"
+        "Coral reefs",
+        "Sea anemones",
+        "Palm groves",
+        "Reef fish",
+        "Tropical birds"
       ]
     },
     culinaryHighlights: [
       {
         dishName: "Coconut Prawn Curry",
-        description: "Fresh prawns cooked in rich coconut gravy with local spices"
-      },
-      {
-        dishName: "Grilled Fish",
-        description: "Local fish marinated with Indian spices and grilled over charcoal"
+        description: "Fresh prawns cooked in coconut gravy"
       }
     ],
     bestTimeToVisit: {
@@ -111,19 +82,11 @@ const islands = [
       endMonth: "May",
       peakSeason: "November to March"
     },
-    vibeTags: ["Quiet", "Snorkeling", "Beach", "Romantic", "Photography"],
+    vibeTags: ["Quiet","Snorkeling","Beach"],
     images: [
       {
         url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=800",
-        caption: "Natural Bridge - A stunning rock formation"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1527489377706-5bf97e608852?q=80&w=800",
-        caption: "Peaceful beaches with clear waters"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800",
-        caption: "Sunset at Laxmanpur Beach"
+        caption: "Natural rock bridge"
       }
     ],
     externalLinks: {
@@ -131,15 +94,13 @@ const islands = [
       govtPortal: "https://andaman.gov.in"
     }
   },
+
   {
     name: "Agatti Island",
     nativeName: "Agatti",
     location: {
       group: "Lakshadweep",
-      coordinates: {
-        lat: 10.8519,
-        lng: 72.1920
-      },
+      coordinates: { lat: 10.8519, lng: 72.192 },
       area: "7.6 sq km"
     },
     status: {
@@ -148,28 +109,20 @@ const islands = [
       permitRequired: "Special Permission"
     },
     description: {
-      summary: "Agatti Island is the gateway to Lakshadweep, featuring a stunning coral reef surrounding the entire island. With its turquoise lagoons and pristine beaches, it's a paradise for water sports enthusiasts and nature lovers.",
-      history: "Agatti has been inhabited for centuries and has a rich maritime history. The island played an important role in ancient Arab trading routes across the Arabian Sea.",
+      summary: "Gateway island to Lakshadweep with stunning lagoons.",
+      history: "Historically connected with Arab trade routes.",
       floraAndFauna: [
-        "Extensive coral reefs",
-        "Lagoon fish species",
+        "Coral reefs",
+        "Lagoon fish",
         "Sea turtles",
         "Coconut plantations",
-        "Migratory seabirds"
+        "Seabirds"
       ]
     },
     culinaryHighlights: [
       {
         dishName: "Tuna Curry",
-        description: "Fresh tuna prepared with coconut and local spices, a Lakshadweep specialty"
-      },
-      {
-        dishName: "Octopus Fry",
-        description: "Crispy fried octopus marinated with turmeric and chili"
-      },
-      {
-        dishName: "Mas Huni",
-        description: "Shredded smoked tuna mixed with coconut, onions, and lime"
+        description: "Lakshadweep style tuna cooked with coconut"
       }
     ],
     bestTimeToVisit: {
@@ -177,19 +130,11 @@ const islands = [
       endMonth: "March",
       peakSeason: "December to February"
     },
-    vibeTags: ["Scuba", "Snorkeling", "Kayaking", "Beach", "Adventure"],
+    vibeTags: ["Scuba","Snorkeling","Beach"],
     images: [
       {
         url: "https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?q=80&w=800",
-        caption: "Turquoise lagoon surrounding Agatti"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1542259009477-d625272157b7?q=80&w=800",
-        caption: "Coral reefs visible from the shore"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1471922694854-ff1b63b20054?q=80&w=800",
-        caption: "Traditional fishing boats"
+        caption: "Agatti lagoon"
       }
     ],
     externalLinks: {
@@ -197,15 +142,13 @@ const islands = [
       govtPortal: "https://lakshadweep.gov.in"
     }
   },
+
   {
     name: "Diu Island",
     nativeName: "Diu",
     location: {
-      group: "Offshore Mainlined",
-      coordinates: {
-        lat: 20.7144,
-        lng: 70.9873
-      },
+      group: "Offshore Mainland",
+      coordinates: { lat: 20.7144, lng: 70.9873 },
       area: "40 sq km"
     },
     status: {
@@ -214,28 +157,20 @@ const islands = [
       permitRequired: "None"
     },
     description: {
-      summary: "Diu is a small island off the coast of Gujarat, known for its Portuguese colonial architecture, beautiful beaches, and historic fortifications. It offers a unique blend of Indian and Portuguese culture, with old churches, forts, and vibrant festivals.",
-      history: "Diu was under Portuguese rule from 1535 to 1961, leaving behind a rich cultural heritage. The island features impressive Portuguese fortifications and churches that stand as testimony to its colonial past.",
+      summary: "Island off Gujarat famous for beaches and Portuguese architecture.",
+      history: "Under Portuguese rule from 1535 to 1961.",
       floraAndFauna: [
-        "Coastal vegetation and palm trees",
-        "Migratory birds at Fudam Bird Sanctuary",
-        "Marine life in rocky coastal areas",
-        "Hog deer population",
-        "Medicinal plants and herbs"
+        "Coastal palms",
+        "Migratory birds",
+        "Marine fish",
+        "Rocky shore ecosystems",
+        "Coastal shrubs"
       ]
     },
     culinaryHighlights: [
       {
         dishName: "Fish Recheiado",
-        description: "Portuguese-style stuffed fish with spicy red masala"
-      },
-      {
-        dishName: "Bebinca",
-        description: "Traditional Portuguese layered dessert made with coconut milk and eggs"
-      },
-      {
-        dishName: "Crab Xec Xec",
-        description: "Goan-Portuguese crab curry with coconut and spices"
+        description: "Spicy stuffed fish with Portuguese influence"
       }
     ],
     bestTimeToVisit: {
@@ -243,19 +178,11 @@ const islands = [
       endMonth: "March",
       peakSeason: "December to February"
     },
-    vibeTags: ["Historical", "Beach", "Photography", "Cultural", "Architecture"],
+    vibeTags: ["Historical","Beach","Architecture"],
     images: [
       {
         url: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?q=80&w=800",
-        caption: "Diu Fort overlooking the sea"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=800",
-        caption: "Portuguese colonial architecture"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1580837119756-563d608dd119?q=80&w=800",
-        caption: "Nagoa Beach - Popular tourist spot"
+        caption: "Diu Fort"
       }
     ],
     externalLinks: {
@@ -263,15 +190,13 @@ const islands = [
       govtPortal: "https://daman.nic.in"
     }
   },
+
   {
     name: "Majuli Island",
     nativeName: "Majuli",
     location: {
-      group: "Other",
-      coordinates: {
-        lat: 26.9508,
-        lng: 94.1753
-      },
+      group: "River Island",
+      coordinates: { lat: 26.9508, lng: 94.1753 },
       area: "352 sq km"
     },
     status: {
@@ -280,28 +205,20 @@ const islands = [
       permitRequired: "None"
     },
     description: {
-      summary: "Majuli is the world's largest river island, formed by the Brahmaputra River in Assam. It's a cultural hub of Assamese civilization, home to ancient monasteries (satras), vibrant festivals, and unique traditions. The island is famous for its mask-making, pottery, and Neo-Vaishnavite culture.",
-      history: "Majuli has been the cultural capital of Assamese civilization for over 500 years. It was established as a center of Neo-Vaishnavite culture by Saint Srimanta Sankardeva in the 16th century and houses numerous ancient monasteries.",
+      summary: "Largest river island in the world located in the Brahmaputra River.",
+      history: "Cultural center of Assamese Vaishnavite traditions.",
       floraAndFauna: [
-        "Rich wetland ecosystem",
-        "Migratory birds including Siberian cranes",
-        "Endangered river dolphins",
-        "Diverse aquatic plants",
-        "Bamboo groves and paddy fields"
+        "Wetland ecosystems",
+        "Migratory birds",
+        "River dolphins",
+        "Bamboo groves",
+        "Rice fields"
       ]
     },
     culinaryHighlights: [
       {
         dishName: "Masor Tenga",
-        description: "Traditional Assamese sour fish curry with tomatoes and elephant apple"
-      },
-      {
-        dishName: "Pitha",
-        description: "Assamese rice cakes made during festivals, served with jaggery"
-      },
-      {
-        dishName: "Duck Curry",
-        description: "Local duck prepared with black sesame and aromatic herbs"
+        description: "Traditional Assamese sour fish curry"
       }
     ],
     bestTimeToVisit: {
@@ -309,26 +226,37 @@ const islands = [
       endMonth: "March",
       peakSeason: "November to February"
     },
-    vibeTags: ["Cultural", "Historical", "Bird Watching", "Photography", "Quiet"],
+    vibeTags: ["Cultural","Bird Watching","Photography"],
     images: [
       {
         url: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?q=80&w=800",
-        caption: "Brahmaputra River surrounding Majuli"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800",
-        caption: "Traditional Assamese monastery (satra)"
-      },
-      {
-        url: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800",
-        caption: "Sunset over the river island"
+        caption: "Majuli landscape"
       }
     ],
     externalLinks: {
       wikiUrl: "https://en.wikipedia.org/wiki/Majuli",
       govtPortal: "https://majuli.assam.gov.in"
     }
-  }
+  },
+
+  { name:"Ross Island", nativeName:"Netaji Subhas Chandra Bose Dweep", location:{ group:"Andaman", coordinates:{ lat:11.6755, lng:92.7626 }, area:"0.6 sq km"}, status:{ isInhabited:false, isProtectedArea:true, permitRequired:"None"}, description:{ summary:"Historic administrative island of the British in Andaman.", history:"Abandoned after 1941 earthquake.", floraAndFauna:["Peacocks","Spotted deer","Tropical trees","Coral reefs","Seabirds"]}, culinaryHighlights:[{dishName:"Grilled Fish",description:"Simple grilled reef fish"}], bestTimeToVisit:{startMonth:"October",endMonth:"May",peakSeason:"December to February"}, vibeTags:["Historical","Nature"], images:[{url:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800",caption:"Historic ruins"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Ross_Island",govtPortal:"https://andaman.gov.in"} },
+
+  { name:"Baratang Island", nativeName:"Baratang", location:{ group:"Andaman", coordinates:{ lat:12.1176, lng:92.7427 }, area:"238 sq km"}, status:{ isInhabited:true, isProtectedArea:true, permitRequired:"Special Permission"}, description:{ summary:"Island famous for limestone caves and mangrove creeks.", history:"Known for mud volcanoes and tribal reserves.", floraAndFauna:["Mangroves","Crocodiles","Tropical birds","Mud volcanoes","Dense forests"]}, culinaryHighlights:[{dishName:"Fish Curry",description:"Local Andaman style fish curry"}], bestTimeToVisit:{startMonth:"November",endMonth:"April",peakSeason:"December to February"}, vibeTags:["Adventure","Caves"], images:[{url:"https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800",caption:"Mangrove waterways"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Baratang_Island",govtPortal:"https://andaman.gov.in"} },
+
+  { name:"Little Andaman", nativeName:"Little Andaman", location:{ group:"Andaman", coordinates:{ lat:10.757, lng:92.515 }, area:"707 sq km"}, status:{ isInhabited:true, isProtectedArea:false, permitRequired:"Special Permission"}, description:{ summary:"Island known for waterfalls and surfing beaches.", history:"Traditional home of the Onge tribe.", floraAndFauna:["Rainforests","Sea turtles","Waterfalls","Mangroves","Birdlife"]}, culinaryHighlights:[{dishName:"Coconut Fish Curry",description:"Island style fish curry"}], bestTimeToVisit:{startMonth:"October",endMonth:"April",peakSeason:"December to February"}, vibeTags:["Surfing","Adventure"], images:[{url:"https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800",caption:"Pristine beach"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Little_Andaman",govtPortal:"https://andaman.gov.in"} },
+
+  { name:"Minicoy Island", nativeName:"Maliku", location:{ group:"Lakshadweep", coordinates:{ lat:8.2955, lng:73.0483 }, area:"4.8 sq km"}, status:{ isInhabited:true, isProtectedArea:false, permitRequired:"Special Permission"}, description:{ summary:"Southernmost Lakshadweep island known for lighthouse.", history:"Strong cultural links with Maldives.", floraAndFauna:["Coral reefs","Lagoon fish","Sea turtles","Coconut palms","Seabirds"]}, culinaryHighlights:[{dishName:"Tuna Mas",description:"Traditional tuna preparation"}], bestTimeToVisit:{startMonth:"October",endMonth:"March",peakSeason:"December to February"}, vibeTags:["Scuba","Beach"], images:[{url:"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800",caption:"Minicoy lagoon"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Minicoy",govtPortal:"https://lakshadweep.gov.in"} },
+
+  { name:"Kavaratti Island", nativeName:"Kavaratti", location:{ group:"Lakshadweep", coordinates:{ lat:10.5667, lng:72.6417 }, area:"3.9 sq km"}, status:{ isInhabited:true, isProtectedArea:false, permitRequired:"Special Permission"}, description:{ summary:"Capital island of Lakshadweep known for lagoons.", history:"Administrative center of Lakshadweep.", floraAndFauna:["Coral reefs","Sea turtles","Reef fish","Palm trees","Lagoon ecosystems"]}, culinaryHighlights:[{dishName:"Spicy Tuna Curry",description:"Popular Lakshadweep dish"}], bestTimeToVisit:{startMonth:"October",endMonth:"March",peakSeason:"December to February"}, vibeTags:["Snorkeling","Beach"], images:[{url:"https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=800",caption:"Lagoon waters"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Kavaratti",govtPortal:"https://lakshadweep.gov.in"} },
+
+  { name:"Bangaram Island", nativeName:"Bangaram", location:{ group:"Lakshadweep", coordinates:{ lat:10.9401, lng:72.2871 }, area:"1.2 sq km"}, status:{ isInhabited:false, isProtectedArea:false, permitRequired:"Special Permission"}, description:{ summary:"Luxury resort island famous for coral lagoons.", history:"Popular eco tourism destination.", floraAndFauna:["Coral reefs","Turtles","Lagoon fish","Palm trees","Seabirds"]}, culinaryHighlights:[{dishName:"Seafood Grill",description:"Fresh seafood grilled near beach"}], bestTimeToVisit:{startMonth:"October",endMonth:"March",peakSeason:"December to February"}, vibeTags:["Luxury","Beach","Scuba"], images:[{url:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=800",caption:"Bangaram beach"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Bangaram_Atoll",govtPortal:"https://lakshadweep.gov.in"} },
+
+  { name:"Kadmat Island", nativeName:"Kadmat", location:{ group:"Lakshadweep", coordinates:{ lat:11.224, lng:72.776 }, area:"3.2 sq km"}, status:{ isInhabited:true, isProtectedArea:false, permitRequired:"Special Permission"}, description:{ summary:"Island with long sandy beaches and coral reefs.", history:"Fishing and coconut farming community.", floraAndFauna:["Coral reefs","Sea turtles","Lagoon fish","Palm trees","Seabirds"]}, culinaryHighlights:[{dishName:"Coconut Fish Fry",description:"Fresh fish fried with coconut spices"}], bestTimeToVisit:{startMonth:"October",endMonth:"March",peakSeason:"December to February"}, vibeTags:["Snorkeling","Beach"], images:[{url:"https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800",caption:"Kadmat lagoon"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Kadmat_Island",govtPortal:"https://lakshadweep.gov.in"} },
+
+  { name:"Elephanta Island", nativeName:"Gharapuri", location:{ group:"Arabian Sea", coordinates:{ lat:18.9633, lng:72.9315 }, area:"10 sq km"}, status:{ isInhabited:true, isProtectedArea:true, permitRequired:"None"}, description:{ summary:"Island near Mumbai known for UNESCO cave temples.", history:"Caves date back to 5th century dedicated to Shiva.", floraAndFauna:["Tropical trees","Monkeys","Birds","Rocky hills","Shrubs"]}, culinaryHighlights:[{dishName:"Street Seafood",description:"Simple fried seafood sold near ferry jetty"}], bestTimeToVisit:{startMonth:"November",endMonth:"March",peakSeason:"January to February"}, vibeTags:["Historical","Architecture"], images:[{url:"https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800",caption:"Elephanta caves"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/Elephanta_Island",govtPortal:"https://maharashtratourism.gov.in"} },
+
+  { name:"St Mary's Island", nativeName:"St Mary's", location:{ group:"Arabian Sea", coordinates:{ lat:13.379, lng:74.673 }, area:"0.5 sq km"}, status:{ isInhabited:false, isProtectedArea:true, permitRequired:"None"}, description:{ summary:"Island known for unique basalt rock formations.", history:"Linked to Vasco da Gama landing.", floraAndFauna:["Coastal shrubs","Seabirds","Rock formations","Marine life","Shellfish"]}, culinaryHighlights:[{dishName:"Seafood Fry",description:"Typical coastal Karnataka seafood"}], bestTimeToVisit:{startMonth:"October",endMonth:"February",peakSeason:"December"}, vibeTags:["Geology","Photography"], images:[{url:"https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?q=80&w=800",caption:"Basalt columns"}], externalLinks:{wikiUrl:"https://en.wikipedia.org/wiki/St._Mary's_Islands",govtPortal:"https://karnatakatourism.org"} }
+
 ];
 
 module.exports = islands;

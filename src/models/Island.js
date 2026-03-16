@@ -15,7 +15,7 @@ const IslandSchema = new mongoose.Schema({
   location: {
     group: { 
       type: String, 
-      enum: ['Andaman', 'Nicobar', 'Lakshadweep', 'Offshore Mainlined', 'Other'],
+      enum: ['Andaman', 'Nicobar', 'Lakshadweep', 'Offshore Mainland', 'River Island', 'Arabian Sea', 'Other'],
       required: true 
     },
     coordinates: {

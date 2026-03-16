@@ -16,6 +16,32 @@ const UserSchema = new mongoose.Schema({
       'Please add a valid email'
     ]
   },
+  phone: {
+    type: String,
+    default: ''
+  },
+  bio: {
+    type: String,
+    maxlength: 300,
+    default: ''
+  },
+  location: {
+    type: String,
+    default: ''
+  },
+  dateOfBirth: {
+    type: Date,
+    default: null
+  },
+  gender: {
+    type: String,
+    enum: ['', 'male', 'female', 'other', 'prefer-not-to-say'],
+    default: ''
+  },
+  avatar: {
+    type: String,
+    default: ''
+  },
   role: {
     type: String,
     enum: ['user', 'publisher'],
