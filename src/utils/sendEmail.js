@@ -33,7 +33,8 @@ const getAccessToken = () => {
           if (parsed.access_token) {
             resolve(parsed.access_token);
           } else {
-            reject(new Error(parsed.error_description || 'Failed to get access token'));
+            console.error('[OAuth] Token fetch failed:', JSON.stringify(parsed));
+            reject(new Error(parsed.error_description || parsed.error || 'Failed to get access token'));
           }
         } catch (e) {
           reject(e);
@@ -71,7 +72,9 @@ const sendEmail = async (options) => {
   };
 
   const info = await transporter.sendMail(message);
-  console.log('Message sent: %s', info.messageId);
+  console.log('✅ Message sent to:', options.email);
+  console.log('✅ Message ID:', info.messageId);
+  console.log('✅ Response:', info.response);
 };
 
 module.exports = sendEmail;

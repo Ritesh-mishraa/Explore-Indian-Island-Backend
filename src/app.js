@@ -69,7 +69,7 @@ app.use(express.json());
 app.use((req, res, next) => {
   ['body', 'params', 'headers', 'query'].forEach((key) => {
     if (req[key]) {
-      const sanitized = mongoSanitize.sanitize(req[key]);
+      const sanitized = sanitize(req[key]);
       if (key === 'query') {
         Object.defineProperty(req, 'query', {
           value: sanitized,
